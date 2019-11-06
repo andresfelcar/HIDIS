@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: rgb(123, 185, 196);
+}
+
+.container{
+    max-width: 450px;
+    height: auto;
+    background-color: #efefef;
+    margin: 5% auto;
+    padding-bottom: 1rem
+}
+
+.form_top{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #e74444;
+    margin-bottom: 1rem;
+}
+
+.form_top h2{
+    font-weight: bold;
+    color: #cac8c8;
+    font-size: 18px;
+}
+
+h2 span{
+    color: #f35353;
+}
+
+.form_reg{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input, .submit, .delete{
+    background-color: #efefef;
+    padding: .5rem;
+    margin: .5rem 0;
+    border:none;
+    border-bottom: solid #96bed1 .2rem;
+    transition: all .5s;
+}
+
+.input:focus{
+    border-bottom: solid #f35353 .2rem;
+}
+
+.submit {
+
+    width: 40%;
+    border-bottom: none;
+    background-color: #31b1e5;
+    color: white;
+}
+
+.delete{
+    width: 40%;
+    border-bottom: none;
+    background-color: #e53131;
+    color: white;   
+}
+
+.submit:hover{
+    background-color: #2683a8;
+}
+
+.delete:hover{
+    background-color: #c02828;
+}
+
+#iden{
+    display: none;
+}
+
+#iden, label{
+    color: #7c7c7c;
+    background-color: rgba(150, 190, 209, .2);
+    padding: 5px 15px;
+    display: inline;
+    position: relative;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#iden, label:hover{
+    background-color:rgba(66, 130, 160, 0.2) ;
+    
+}
+/*
+#iden, label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #31b1e5;
+    border-radius: 50%;
+    position: absolute;
+}  
